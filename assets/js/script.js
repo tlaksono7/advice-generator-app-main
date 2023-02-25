@@ -14,16 +14,12 @@ const callAPI = function() {
 }
 
 const processAdvice = function(data) {
-    adviceId.textContent = data.slip.id
-    adviceText.textContent = `“${data.slip.advice}”`
+    adviceId.innerHTML = data.slip.id
+    adviceText.innerHTML = `“${data.slip.advice}”`
 }
 
 rerollButton.addEventListener('click', function() {
-    adviceId.textContent = ""
+    adviceId.innerHTML = ""
     adviceText.innerHTML = `<div class="lds-ring"><div></div><div></div><div></div>`
     setTimeout(callAPI, 1000)
 })
-
-document.addEventListener("DOMContentLoaded", function() {
-    callAPI()
-});
