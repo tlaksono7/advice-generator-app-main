@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="assets/css/colors.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <main class="content">
+        <div class="container">
+            <div class="main-content">
+                <h1 class="advice-header">Advice #<span id="advice-id"></span></h1>
+                <div class="advice-body">
+                    <p class="advice-body__text"></p>
+                </div>
+                <picture class="advice-divider">
+                    <source class="desktop" media="(min-width: 601px)" srcset="assets/images/pattern-divider-desktop.svg" />
+                    <source class="mobile" media="(max-width: 550px)" srcset="assets/images/pattern-divider-mobile.svg" />
+                    <img class="advice-divider__img" src="assets/images/pattern-divider-desktop.svg" alt="Icon divider" />
+                </picture>
+                <div class="advice-reroll">
+                    <div class="advice-reroll__button">
+                        <img src="assets/images/icon-dice.svg" class="advice-roll_button--image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        <br>Coded by <a href="https://tlaksono.my.id/" target="_blank">Tito Laksono</a>.
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
